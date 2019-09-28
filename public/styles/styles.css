@@ -1,3 +1,7 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+#home {
+  background-color: rgb(133, 126, 134);
+}
