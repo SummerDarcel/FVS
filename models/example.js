@@ -5,3 +5,5 @@ module.exports = function(sequelize, DataTypes) {
   });
   return Example;
 };
+// Syncs with DB
+// exampledb.sync();
