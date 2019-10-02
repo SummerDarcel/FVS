@@ -1,4 +1,7 @@
 "use strict";
+require("dotenv").config();
+var keys = require("./keys.js");
+var petfinder = new Petfinder(keys.petfinder);
 
 var fs = require("fs");
 var path = require("path");
