@@ -6,7 +6,7 @@ VALUES
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
-("Cat",4, 4, 3, 2, 3,"Only meow to talk to humans","public/images/kitten.jpg");
+("Cat",4, 4, 3, 2, 3,"Only meow to talk to humans","public/images/kitten.jpg","https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46114506/2/?bust=1569643403&width=1080");
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
