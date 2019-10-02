@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
+    integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/foundation.css">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is the best pet for you?</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body id="quizImg">
+  <header class="subnav-hero-section">
+    <h1 class="subnav-hero-headline">Petfinder</h1>
+    <ul class="subnav-hero-subnav">
+      <li><a href="/" class="is-active">Home</a></li>
+      <li><a href="/quiz.html" class="is-active">Take the Quiz</a></li>
+      <li><a href="/pets.html" class="is-active">See possible pets</a></li>
+    </ul>
+  </header>
+  <br />
+  <div class="grid-container">
+    <div class="translucent-quiz-overlay">
+      <form>
+        <div class="grid-container">
+          <h2>Find your perfect pet</h2>
+          <br>
+          <div class="grid-x grid-margin-x grid-margin-y q1">
+            <fieldset class="large-8 cell">
+              <legend>I want a pet with a lot of energy!</legend>
+              <input type="radio" name="question1" value="1" class="res" required><label for="stronglyDisagree">Strongly
+                Disagree</label>
+              <input type="radio" name="question1" value="2" class="res"><label for="disagree">Disagree</label>
+              <input type="radio" name="question1" value="3" class="res"><label for="neutral">Neutral</label>
+              <input type="radio" name="question1" value="4" class="res"><label for="agree">Agree</label>
+              <input type="radio" name="question1" value="5" class="res"><label for="stronglyAgree">Strongly Agree</label>
+            </fieldset>
+          </div>
+          <div class="grid-x grid-margin-x grid-margin-y q2">
+            <fieldset class="large-8 cell">
+              <legend>I want to take my pet outdoors with me.</legend>
+              <input type="radio" name="question2" value="1" class="res" required><label for="stronglyDisagree">Strongly
+                Disagree</label>
+              <input type="radio" name="question2" value="2" class="res"><label for="disagree">Disagree</label>
+              <input type="radio" name="question2" value="3" class="res"><label for="neutral">Neutral</label>
+              <input type="radio" name="question2" value="4" class="res"><label for="agree">Agree</label>
+              <input type="radio" name="question2" value="5" class="res"><label for="stronglyAgree">Strongly Agree</label>
+            </fieldset>
+          </div>
+          <div class="grid-x grid-margin-x grid-margin-y q3">
+            <fieldset class="large-8 cell">
+              <legend>I have a lot of patience and am willing to train my pet.</legend>
+              <input type="radio" name="question3" value="1" class="res" required><label for="stronglyDisagree">Strongly
+                Disagree</label>
+              <input type="radio" name="question3" value="2" class="res"><label for="disagree">Disagree</label>
+              <input type="radio" name="question3" value="3" class="res"><label for="neutral">Neutral</label>
+              <input type="radio" name="question3" value="4" class="res"><label for="agree">Agree</label>
+              <input type="radio" name="question3" value="5" class="res"><label for="stronglyAgree">Strongly Agree</label>
+            </fieldset>
+          </div>
+          <div class="grid-x grid-margin-x grid-margin-y q4">
+            <fieldset class="large-8 cell">
+              <legend>I don't mind cleaning up after my pet.</legend>
+              <input type="radio" name="question4" value="1" class="res" required><label for="stronglyDisagree">Strongly
+                Disagree</label>
+              <input type="radio" name="question4" value="2" class="res"><label for="disagree">Disagree</label>
+              <input type="radio" name="question4" value="3" class="res"><label for="neutral">Neutral</label>
+              <input type="radio" name="question4" value="4" class="res"><label for="agree">Agree</label>
+              <input type="radio" name="question4" value="5" class="res"><label for="stronglyAgree">Strongly Agree</label>
+            </fieldset>
+          </div>
+          <div class="grid-x grid-margin-x grid-margin-y q5">
+            <fieldset class="large-8 cell parentq5">
+              <legend>I want my pet to show affection.<legend>
+              <input type="radio" value="1" class="res" required><label for="stronglyDisagree">Strongly Disagree</label>
+              <input type="radio" value="2" class="res"><label for="disagree">Disagree</label>
+              <input type="radio" value="3" class="res"><label for="neutral">Neutral</label>
+              <input type="radio" value="4" class="res"><label for="agree">Agree</label>
+              <input type="radio" value="5" class="res"><label for="stronglyAgree">Strongly Agree</label>
+            </fieldset>
+          </div>
+              <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="large-5 cell">
+              <button type="submit" class="primary button">Find my pet!</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br />
+
+  <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+
+    <div class="modalDiv"></div>
+    <a href="/quiz.html" class="close-reveal-modal" aria-label="Close"><h1>&#215;</h1></a>
+
+  </div>
+
+
+
+  <script>
+    $(".primary").on("click", function (event) {
+      event.preventDefault();
+        var questionArray = [
+        $(".q1 .res:checked").val(),
+        $(".q2 .res:checked").val(),
+        $(".q3 .res:checked").val(),
+        $(".q4 .res:checked").val(),
+        $(".q5 .res:checked").val()
+      ];
+      var obj = {
+        survey: questionArray
+      };
+    //   $.post("/quiz", obj, function (data) {
+    //     var object = JSON.parse(data);
+    //     $(".grid-container").css("display", "none");
+    //     var theBreed = "Your Breed: " + object.breed_name;
+    //     var brdDescript = object.breed_description;
+    //     var image = $("<img>").attr("src", object.breed_photo);
+    //     $(image).addClass("modalImage");
+    //     var textSec1 = $("<div>").addClass("textSection");
+    //     var textSec2 = $("<div>").addClass("textSection");
+    //     var breedHeader = $("<h3>");
+    //     var imgSec = $("<div>").addClass("imgSection");
+    //     breedHeader.text(theBreed);
+    //     textSec1.append(breedHeader);
+    //     textSec2.text(brdDescript);
+    //     imgSec.append(image);
+    //     $(".modalDiv").append(textSec1);
+    //     $(".modalDiv").append(textSec2);
+    //     $(".modalDiv").append(imgSec);
+    //     $("#myModal").css("display", "inline-grid");
+    //   });
+    });
+  </script>
+</body>
+
+</html>
