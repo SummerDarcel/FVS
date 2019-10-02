@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "mysqlworkbench",
-    "database": "animals",
+    "password": "password",
+    "database": "pets",
     "host": "localhost",
     "dialect": "mysql"
   },
