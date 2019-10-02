@@ -1,4 +1,4 @@
-USE animals;
+USE pets;
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
