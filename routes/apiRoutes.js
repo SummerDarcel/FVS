@@ -24,7 +24,7 @@
 // };
 
 var db = require("../models");
-var breedObject = {};
+var petObject = {};
 var compareArray = [];
 
 function compareArrays(arr1, arr2) {
@@ -41,9 +41,9 @@ function compareArrays(arr1, arr2) {
 }
 
 module.exports = function(app) {
-  app.get("/api/allbreeds", function(req, res) {
-    db.Breed.findAll({
-      order: ["breed_name"]
+  app.get("/api/allpets", function(req, res) {
+    db.Pet.findAll({
+      order: ["petName"]
     }).then(function(dbExamples) {
       res.json(dbExamples);
     });
@@ -58,28 +58,28 @@ module.exports = function(app) {
       }
     }
 
-    db.Breed.findAll({
+    db.Pet.findAll({
       attributes: [
-        "breed_name",
-        "breed_energy",
-        "breed_exercise_req",
-        "breed_ease_training",
-        "breed_grooming_req",
-        "breed_affection_level",
-        "breed_photo",
-        "breed_descript"
+        "petName",
+        "petEnergy",
+        "petExercise",
+        "petTraining",
+        "petGrooming",
+        "petAffection",
+        "petPhoto",
+        "petDescription"
       ]
     }).then(function(dbExamples) {
-      breedObject = dbExamples;
-      for (var br in breedObject) {
-        var breedArray = [
-          breedObject[br].dataValues.breed_energy,
-          breedObject[br].dataValues.breed_exercise_req,
-          breedObject[br].dataValues.breed_ease_training,
-          breedObject[br].dataValues.breed_grooming_req,
-          breedObject[br].dataValues.breed_affection_level
+      petObject = dbExamples;
+      for (var br in petObject) {
+        var petArray = [
+          petObject[br].dataValues.petEnergy,
+          petObject[br].dataValues.petExercise,
+          petObject[br].dataValues.petTraining,
+          petObject[br].dataValues.petGrooming,
+          petObject[br].dataValues.petAffection
         ];
-        compareArray.push(breedArray);
+        compareArray.push(petArray);
       }
       var sumArray = [];
 
@@ -92,26 +92,26 @@ module.exports = function(app) {
           break;
         }
       }
-      var resultBreed = {
-        breed_name: breedObject[t].dataValues.breed_name,
-        breed_photo: breedObject[t].dataValues.breed_photo,
-        breed_description: breedObject[t].dataValues.breed_descript
+      var resultPet = {
+        petName: petObject[t].dataValues.petName,
+        petPhoto: petObject[t].dataValues.petPhoto,
+        petDescription: petObject[t].dataValues.petDescription
       };
-      res.json(JSON.stringify(resultBreed));
+      res.json(JSON.stringify(resultPet));
     });
   });
-  // Create a new breed
-  app.post("/api/newbreed", function(req, res) {
-    db.Breed.create({
-      breed_name: req.body.name,
-      breed_energy: req.body.energy,
-      breed_exercise_req: req.body.exercise,
-      breed_ease_training: req.body.training,
-      breed_grooming_req: req.body.grooming,
-      breed_affection_level: req.body.affection,
-      breed_descript: req.body.description,
-      breed_photo: req.body.photo,
-      breed_link: req.body.link
+  // Create a new pet
+  app.post("/api/newpet", function(req, res) {
+    db.Pet.create({
+      petName: req.body.name,
+      petEnergy: req.body.energy,
+      petExercise: req.body.exercise,
+      petTraining: req.body.training,
+      petGrooming: req.body.grooming,
+      petAffection: req.body.affection,
+      petDescription: req.body.description,
+      petPhoto: req.body.photo,
+      petLink: req.body.link
     })
       .then(function(data) {
         res.json(data);
@@ -122,11 +122,11 @@ module.exports = function(app) {
       });
   });
 
-  app.get("/api/:breed", function(req, res) {
-    var b = req.params.breed;
-    db.Breed.findOne({
+  app.get("/api/:pet", function(req, res) {
+    var b = req.params.pet;
+    db.Pet.findOne({
       where: {
-        breed_name: b
+        petName: b
       }
     }).then(function(data) {
       res.json(data);
