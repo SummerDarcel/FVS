@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "mysqlworkbench",
-    "database": "animals",
+    "password": "password",
+    "database": "pets",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "mysqlworkbench",
+    "password": "password",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
