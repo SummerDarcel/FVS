@@ -9,6 +9,8 @@ module.exports = function(sequelize, DataTypes) {
     petDescription: DataTypes.TEXT,
     petPhoto: DataTypes.STRING,
     petLink: DataTypes.STRING
+  }, {
+    timestamps: false
   });
 
   return Pet;

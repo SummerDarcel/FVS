@@ -1,9 +1,9 @@
 .subnav-hero-section {
     text-align: center;
-    background-image:"../images/background.jpg";
+    background-image:url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     overflow: visible;
     display: -webkit-flex;
