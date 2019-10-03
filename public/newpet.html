@@ -158,6 +158,15 @@
           };
           $.post("/api/newpet", valAll, function (data) {
             alert("New pet added!");
+            $("#petName").val("");
+            $("#petEnergy").val("");
+            $("#petExercise").val("");
+            $("#petTraining").val("");
+            $("#petGroom").val("");
+            $("#petAffection").val("");
+            $("#petDescription").val("");
+            $("#petPicLink").val("");
+            $("#petLink").val("");
           });
         };
       });
