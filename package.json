@@ -18,7 +18,8 @@
     "finalhandler": "^1.1.2",
     "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.19.0"
+    "petfinder": "^0.1.1",
+    "sequelize": "^5.19.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -30,5 +31,4 @@
     "mocha": "^6.2.0",
     "prettier": "^1.18.2"
   }
-  
 }
