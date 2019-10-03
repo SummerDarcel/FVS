@@ -22,7 +22,7 @@ VALUES
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
-("Monkey",5, 5, 5, 5, 5,"Permenant Toddlers","public/images/monkey.jpg", "https://en.wikipedia.org/wiki/Monkey");
+("Monkey",5, 5, 5, 5, 5,"Permanent Toddlers","public/images/monkey.jpg", "https://en.wikipedia.org/wiki/Monkey");
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
@@ -30,7 +30,7 @@ VALUES
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
-("Hampster",3, 2, 1, 1, 1,"Can be moody","public/images/hamster-alone.jpg", "https://www.petfinder.com/small-furry/dwarf-hamsters-25562212/ny/brooklyn/sean-casey-animal-rescue-ny637/");
+("Hamster",3, 2, 1, 1, 1,"Can be moody","public/images/hamster-alone.jpg", "https://www.petfinder.com/small-furry/dwarf-hamsters-25562212/ny/brooklyn/sean-casey-animal-rescue-ny637/");
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES

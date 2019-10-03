@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add a Pet!</title>
+</head>
+
+
+<body id="newPetPage">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
+    integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/foundation.css">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add a Pet!</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <header class="subnav-hero-section">
+    <h1 class="subnav-hero-headline">Pet Finder</h1>
+    <ul class="subnav-hero-subnav">
+      <li><a href="/" class="is-active">Home</a></li>
+      <li><a href="/quiz.html" class="is-active">Find My Pet!</a></li>
+      <li><a href="/breeds.html" class="is-active">See All Pets</a></li>
+      <li><a href="/newbreed.html" class="is-active">Add a Pet</a></li>
+      <!-- <li><a href="/search.html" class="is-active">Find A Dog</a></li> -->
+    </ul>
+  </header>
+  <div class="grid-container">
+
+    <br>
+
+    <div class="translucent-form-overlay">
+      <form action="/pets.html" method="post" id="form">
+        <h3>Add a New Pet!</h3>
+        <div class="row columns">
+          <label>Pet Name:
+            <input type="text" id="petName" name="petName" placeholder="Pet Name" required>
+          </label>
+        </div>
+        <div class="row columns">
+          <label> Pet Energy Level (1-5):
+            <select name="status" type="text" id="petEnergy" required>
+              <option value="">Choose...</option>
+              <option value=1>1 (No Energy)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Lots of Energy)</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label> Pet Exercise Level(1-5):
+            <select name="status" type="text" id="petExercise" required>
+              <option value="">Choose...</option>
+              <option value=1>1 (No Exercise)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Exercise Required)</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label> Pet Ease of Training (1-5):
+            <select name="status" type="text" id="petTraining" required>
+              <option value="">Choose...</option>
+              <option value=1>1 (Hard to Train)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Easy to Train)</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label> Pet Grooming Level (1-5):
+            <select name="status" type="text" id="petGroom" required>
+              <option value="">Choose...</option>
+              <option value=1> 1 (Easy to Groom)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Hard to Groom)</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label> Pet Affection Level (1-5):
+            <select name="status" type="text" id="petAffection" required>
+              <option value="">Choose...</option>
+              <option value=1> 1 (Not Affectionate)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Very Affectionate)</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Pet Description
+            <input type="text" name="description" id="petDescription" placeholder="Say a little something about the pet..." required>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Pet Picture Link
+            <input type="text" name="pic_link" id="petPicLink" placeholder="Upload Picture" required>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Pet Link
+            <input type="text" name="link" id="petLink" placeholder="Pet Link" required>
+          </label>
+        </div>
+        <div class="row">
+        </div>
+        <button type="button" class="primary button expanded search-button" id="submit">
+          Add Pet
+        </button>
+      </form>
+    </div>
+    </container>
+  </div>
+
+ 
+
+    <script type="text/javascript">
+      $("#submit").on("click", function (event) {
+        event.preventDefault();
+        
+        if (!$("#petName").val() ||
+          !$("#petEnergy").val() ||
+          !$("#petExercise").val() ||
+          !$("#petTraining").val() ||
+          !$("#petGroom").val() ||
+          !$("#petAffection").val() ||
+          !$("#petDescription").val() ||
+          !$("#petPicLink").val() ||
+          !$("#petLink").val()) {
+          alert("Please complete the form.")
+        } else {
+          var valAll = {
+            name: $("#petName").val().trim(),
+            energy: $("#petEnergy").val().trim(),
+            exercise: $("#petExercise").val().trim(),
+            training: $("#petTraining").val().trim(),
+            grooming: $("#petGroom").val().trim(),
+            affection: $("#petAffection").val().trim(),
+            description: $("#petDescription").val().trim(),
+            photo: $("#petPicLink").val().trim(),
+            link: $("#petLink").val().trim()
+          };
+          $.post("/api/newpet", valAll, function (data) {
+            alert("New pet added!");
+          });
+        };
+      });
+    </script>
+</body>
+
+</html>
