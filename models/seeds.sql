@@ -2,7 +2,7 @@ USE pets;
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
-("Fish",2, 1, 1, 1, 1, "Stay away from Piranhas","../images/dog.jpeg", "https://www.imdb.com/title/tt0464154/");
+("Fish",2, 1, 1, 1, 1, "Stay away from Piranhas","../images/doryFish.jpeg", "https://www.imdb.com/title/tt0464154/");
 
 INSERT INTO pets (petName,petEnergy,petExercise,petTraining,petGrooming,petAffection,petDescription,petPhoto,petLink)
 VALUES
