@@ -24,9 +24,12 @@ p, label{
         -ms-flex-pack: center;
             justify-content: center;
     height: 350px;
+    border-bottom-style: solid;
+    border-bottom-color: #020304;
   }
   
   .subnav-hero-section .subnav-hero-headline {
+
     color: black;
     font-family: 'Mansalva', cursive;
     font-size: 60px;
@@ -83,6 +86,11 @@ p, label{
             flex-wrap: wrap;
   }
   
+  .button.primary {
+    background-color: #ec9dab;
+    color: #fefefe;
+}
+
   .marketing-site-content-section .button.round {
     border-radius: 5000px;
     text-transform: uppercase;

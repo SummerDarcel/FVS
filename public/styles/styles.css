@@ -1,11 +1,5 @@
-
-
-
 #quizImg {
- background-image: url("../images/background.jpg");
- background-position: center;
- background-repeat: no-repeat;
- background-size: 100%;
+    background-color: #fad2d9;
 }
 
 .list-group-item {
@@ -29,7 +23,7 @@ h2{
 .textSection {
  display: inline-block;
  padding-bottom: 20px;
- color: #fefefe;
+ color: white;
 }
 .imgSection {
  display: inline-block;
@@ -40,20 +34,22 @@ h2{
 }
 
 .translucent-quiz-overlay {
- width: 76%;
+ width: 100%;
  background-color: rgba(54, 54, 54, 0.8);
  padding: 10px;
  color: #fefefe;
+ font-size: larger;
 }
 
 .translucent-quiz-overlay label {
  color: #fefefe;
+ font-size: medium;
 }
 
 /* Search Button */
 
 #submit-btn {
- background-color: #1779ba;
+ background-color: #ec9dab;
  color: white;
  font-size: 20px;
 }
