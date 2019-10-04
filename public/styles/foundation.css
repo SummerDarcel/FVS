@@ -16,10 +16,13 @@
         -ms-flex-pack: center;
             justify-content: center;
     height: 350px;
+    border-bottom-style: solid;
+    border-bottom-color: #020304;
   }
   
   .subnav-hero-section .subnav-hero-headline {
-    color: black;
+    color:white;
+    font-size: 200px;
   }
   
   .subnav-hero-subnav {
@@ -59,7 +62,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 200px;
   }
   .marketing-site-content-section {
     display: -webkit-flex;
@@ -70,6 +73,11 @@
             flex-wrap: wrap;
   }
   
+  .button.primary {
+    background-color: #ec9dab;
+    color: #fefefe;
+}
+
   .marketing-site-content-section .button.round {
     border-radius: 5000px;
     text-transform: uppercase;
