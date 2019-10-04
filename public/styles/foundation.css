@@ -55,7 +55,12 @@
     background: rgba(254, 254, 254, 0.15);
   }
 
-  
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
   .marketing-site-content-section {
     display: -webkit-flex;
     display: -ms-flexbox;
