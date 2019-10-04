@@ -19,10 +19,14 @@ h2{
  background-color: rgba(54, 54, 54, 0.8);
  
 }
-
 .textSection {
+    display: inline-block;
+    padding-bottom: 3px;
+    color: white;
+   }
+.textSection1 {
  display: inline-block;
- padding-bottom: 20px;
+ padding-bottom: 3px;
  color: white;
 }
 .imgSection {
@@ -30,7 +34,7 @@ h2{
  padding: 10px;
 }
 .close-reveal-modal{
- font-size: 15px;
+ font-size: 10px;
 }
 
 .translucent-quiz-overlay {

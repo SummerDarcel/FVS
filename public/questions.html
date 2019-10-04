@@ -106,7 +106,7 @@
   <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 
     <div class="modalDiv"></div>
-    <a href="questions.html" class="close-reveal-modal" aria-label="Close"><h1>&#215;</h1></a>
+    <a href="index.html" class="close-reveal-modal" aria-label="Close"><h1>&#215;</h1></a>
 
   </div>
 
@@ -128,12 +128,13 @@
       $.post("/quiz", obj, function (data) {
         var object = JSON.parse(data);
         $(".grid-container").css("display", "none");
-        var thePet = "Your Pet: " + object.petName;
+        var thePet = "Your Ani-Mate: " + object.petName;
         var petDescription = object.petDescription;
         var image = $("<img>").attr("src", object.petPhoto);
         $(image).addClass("modalImage");
-        var textSec1 = $("<div>").addClass("textSection");
+        var textSec1 = $("<div>").addClass("textSection1");
         var textSec2 = $("<div>").addClass("textSection");
+        var spacer = $("<br>");
         var petHeader = $("<h3>");
         var imgSec = $("<div>").addClass("imgSection");
         petHeader.text(thePet);
@@ -141,6 +142,9 @@
         textSec2.text(petDescription);
         imgSec.append(image);
         $(".modalDiv").append(textSec1);
+        $(".modalDiv").append(spacer);
+        // $(".modalDiv").append(textSec);
+        // $(".modalDiv").append(spacer);
         $(".modalDiv").append(textSec2);
         $(".modalDiv").append(imgSec);
         $("#myModal").css("display", "inline-grid");
