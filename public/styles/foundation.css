@@ -1,5 +1,5 @@
 body{
-  font-family: 'Mansalva', cursive;
+  font-family: 'Roboto Slab', serif;
 
 }
 p, label{
@@ -7,7 +7,7 @@ p, label{
 }
 .subnav-hero-section {
     text-align: center;
-    font-family: 'Mansalva', cursive;
+    font-family: 'Roboto Slab', serif;
     background-image:url("../images/pets_and_moneyPink.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -28,12 +28,15 @@ p, label{
     border-bottom-color: #020304;
   }
   
-  .subnav-hero-section .subnav-hero-headline {
-
+  .subnav-hero-headline {
+    vertical-align: text-top;
     color: black;
-    font-family: 'Mansalva', cursive;
-    font-size: 60px;
-
+    font-family: 'Mansalva';
+    font-size: 100px;
+    font-stretch: wider;
+    font-weight: 800;
+    padding-bottom: 10%;
+    
   }
   
   .subnav-hero-subnav {
@@ -68,7 +71,7 @@ p, label{
   }
   
   .subnav-hero-subnav li a:hover {
-    background: rgba(254, 254, 254, 0.15);
+    background: #b97c3f;
   }
 
   img {
