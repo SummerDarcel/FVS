@@ -7,7 +7,7 @@
     position: relative;
     overflow: visible;
     display: -webkit-flex;
-    display: -ms-flexbox;
+    display: -ms-flexbox; 
     display: flex;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -15,7 +15,7 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 300px;
+    height: 350px;
   }
   
   .subnav-hero-section .subnav-hero-headline {
