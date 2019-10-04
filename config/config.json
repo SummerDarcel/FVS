@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "mysqlworkbench",
     "database": "pets",
     "host": "localhost",
     "dialect": "mysql"
