@@ -14,6 +14,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="" />
+  <script type='text/javascript' src="../config.js"></script>
+
   <script src="https://code.jquery.com/jquery.js"></script>
   <title>Find A Pet</title>
 </head>
@@ -78,11 +80,13 @@
       event.preventDefault();
       $("#tableBody").find("tr").remove();
       var userInput = $(".input-field").val().trim();
+      var mykey = config.MY_KEY;
+      var secretkey = config.SECRET_KEY;
 
-      key = "2f95f51b181ddd27883e91878e922466";
+      // key = "2f95f51b181ddd27883e91878e922466";
       //Initalize PetFinder API
 
-      var petAPI = "https://api.petfinder.com/pet.find?key=" + key + "&cat&location=" +
+      var petAPI = "https://api.petfinder.com/pet.find?key=" + mykey + "&cat&location=" +
 
         userInput + "&output=basic&format=json&count=10";
 
