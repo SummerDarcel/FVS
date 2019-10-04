@@ -1,6 +1,6 @@
 .subnav-hero-section {
     text-align: center;
-    background-image:url("../images/background.jpg");
+    background-image:url("../images/pets_and_moneyPink.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -19,7 +19,7 @@
   }
   
   .subnav-hero-section .subnav-hero-headline {
-    color: #fefefe;
+    color: black;
   }
   
   .subnav-hero-subnav {
@@ -39,7 +39,7 @@
   .subnav-hero-subnav li a {
     padding: 0.9rem 1rem;
     font-size: 0.75rem;
-    color: #fefefe;
+    color: black;
     text-transform: uppercase;
     display: block;
     font-weight: bold;
