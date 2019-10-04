@@ -15,3 +15,6 @@ CREATE TABLE pets (
     petPhoto VARCHAR (255) NOT NULL,
     petLink VARCHAR (255) NOT NULL
 );
+
+DROP DATABASE IF EXISTS test_db;
+CREATE DATABASE test_db;
