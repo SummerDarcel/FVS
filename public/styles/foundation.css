@@ -38,8 +38,8 @@
   
   .subnav-hero-subnav li a {
     padding: 0.9rem 1rem;
-    font-size: 0.75rem;
-    color: black;
+    font-size: 15px;
+    color: rgb(250, 248, 248);
     text-transform: uppercase;
     display: block;
     font-weight: bold;
