@@ -23,8 +23,9 @@
     <h1 class="subnav-hero-headline">BreedFinder</h1>
     <ul class="subnav-hero-subnav">
       <li><a href="/" class="is-active">Home</a></li>
-      <li><a href="./questions.html" class="is-active">Take the Quiz</a></li>
+      <li><a href="./questions.html" class="is-active">Find your match!</a></li>
       <li><a href="./pets.html" class="is-active">See All Pets</a></li>
+      <li><a href="./finder.html" class="is-active">Find a Pet near you!</a></li>
     </ul>
   </header>
   <div class="grid-container">
@@ -80,7 +81,7 @@
 
       key = "cdbce0163d4b880f2c38c1635e5c4544";
       //Initalize PetFinder API
-      var petAPI = "https://api.petfinder.com/pet.find?key=" + key + "&animals&location=" +
+      var petAPI = "https://api.petfinder.com/pet-adoption?key=" + key + "&animals&location=" +
         userInput + "&output=basic&format=json&count=10";
 
 
