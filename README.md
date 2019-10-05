@@ -1,7 +1,7 @@
 # Ani-Mates!
 
 ## Summary: 
-Pet Finder is a lighthearted app which allows you to get matched up with your perfect pet, based on questions you answer about what you want in a pet.
+Ani-Mates is a lighthearted app which allows you to get matched up with your perfect pet, based on questions you answer about what you want in a pet.
 
 ![Image of Animals](https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg)
 
