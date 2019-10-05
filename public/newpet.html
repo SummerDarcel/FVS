@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Add a Mate!</title>
-</head>
-
-
-<body id="newPetPage">
+  <!-- Compressed CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
     integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
     crossorigin="anonymous">
@@ -18,26 +11,33 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add a Mate!</title>
-  <link rel="stylesheet" href="css/foundation.css" />
+  <link href="https://fonts.googleapis.com/css?family=Literata|Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+  <title>Ani-mates: find your pawfect match!</title>
   <script src="https://code.jquery.com/jquery.js"></script>
+  
+</head>
+
+<body id="quizImg">
   <header class="subnav-hero-section">
     <h1 class="subnav-hero-headline">Ani-Mates</h1>
     <ul class="subnav-hero-subnav">
       <li><a href="/" class="is-active">Home</a></li>
-      <li><a href="/questions.html" class="is-active">Find Your Match</a></li>
+      <li><a href="/questions.html" class="is-active">Find your match!</a></li>
       <li><a href="/pets.html" class="is-active">See All Pets</a></li>
-      <li><a href="/newpet.html" class="is-active">Add a Pet</a></li>
-      <li><a href="/finder.html" class="is-active">Find A Pet near you!</a></li>
+      <li><a href="./newpet.html" class="is-active">Add a Pet</a></li>
+      <li><a href="finder.html" class="is-active">Find a Pet near you!</a></li>
+
+
     </ul>
   </header>
+  <br />
   <div class="grid-container">
-
-    <br>
-
-    <div class="translucent-form-overlay">
-      <form action="/pets.html" method="post" id="form">
-        <h3>Add a New Pet!</h3>
+    <div class="translucent-quiz-overlay">
+      <form>
+        <div class="grid-container">
+          <h2>Add a New Pet!</h2>
         <div class="row columns">
           <label>Pet Name:
             <input type="text" id="petName" name="petName" placeholder="Pet Name" required>
