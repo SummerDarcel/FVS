@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pets</title>
-</head>
 
-<body>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
     integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
     crossorigin="anonymous">
@@ -20,62 +18,63 @@
   <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 
   <title>View All Pets</title>
-  <link rel="stylesheet" href="./styles/styles.css" />
+
   <script src="https://code.jquery.com/jquery.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="subnav-hero-section">
-        <h1 class="subnav-hero-headline">Ani-Mates</h1>
-        <ul class="subnav-hero-subnav">
-            <li><a href="/" class="is-active">Home</a></li>
-            <li><a href="/questions.html" class="is-active">Find Your Match!</a></li>
-            <li><a href="/pets.html" class="is-active">See All Pets</a></li>
-            <li><a href="/newpet.html" class="is-active">Add a Pet</a></li>
-            <li><a href="finder.html" class="is-active">Find a Pet near you!</a></li>
-        </ul>
-    </header>
-    <br />
-    <div class="grid-container">
-      <container id="Pets">
-        <table>
-          <thead>
-            <tr>
-              <th width="200px">Photo</th>
-              <br>
-              <th width="200px">Pet Name</th>
-              <br>
-              <th width="200px">Pet Description</th>
-            </tr>
-          </thead>
-          <tbody>
+<body id="allPets">
+  <header class="subnav-hero-section">
+    <h1 class="subnav-hero-headline">Ani-Mates</h1>
+      <ul class="subnav-hero-subnav">
+        <li><a href="/" class="is-active">Home</a></li>
+        <li><a href="/questions.html" class="is-active">Find Your Match!</a></li>
+        <li><a href="/pets.html" class="is-active">See All Pets</a></li>
+        <li><a href="/newpet.html" class="is-active">Add a Pet</a></li>
+        <li><a href="finder.html" class="is-active">Find a Pet near you!</a></li>
+      </ul>
+  </header>
+  <br />
+  <div class="grid-container">
+    <container id="Pets">
+      <table>
+        <thead>
+          <tr>
+            <th width="200px">Photo</th>
+            <br>
+            <th width="200px">Pet Name</th>
+            <br>
+            <th width="200px">Pet Description</th>
+          </tr>
+        </thead>
+        <tbody>
 
-          </tbody>
-        </table>
-      </container>
-    </div>
-    <br/>
+        </tbody>
+      </table>
+    </container>
+  </div>
+  <br/>
     
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $.ajax({
-          url: "/api/allpets",
-          method: "GET"
-        }).then(function (data) {
-          console.log(data)
-          for (var i = 0; i < data.length; i++) {
-            var tR = $("<tr>");
-            var image = $("<img>").attr("src", data[i].petPhoto);
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.ajax({
+        url: "/api/allpets",
+        method: "GET"
+      }).then(function (data) {
+        console.log(data)
+        for (var i = 0; i < data.length; i++) {
+          var tR = $("<tr>");
+          var image = $("<img>").attr("src", data[i].petPhoto);
           
-            tR.append(
-              $("<td>").append(image),
-              $("<td>").text(data[i].petName),
-              $("<td>").text(data[i].petDescription)
-            );
-            $("tbody").append(tR);
-          }
-        });
+          tR.append(
+            $("<td>").append(image),
+            $("<td>").text(data[i].petName),
+            $("<td>").text(data[i].petDescription)
+          );
+          
+          $("tbody").append(tR);
+        }
       });
+    });
     </script>
   </body>
 
