@@ -7,45 +7,65 @@
     integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles/foundation.css">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Literata|Roboto+Slab&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-  <title>Ani-Mates!</title>
+
+  <title>Ani-mates: find your pawfect match!</title>
   <link rel="stylesheet" href="./styles/foundation.css" />
   <script src="https://code.jquery.com/jquery.js"></script>
+  
 </head>
 
-<body>
-  <header class="subnav-hero-section" id="top">
+<body id="quizImg">
+  <header class="subnav-hero-section">
     <h1 class="subnav-hero-headline">Ani-Mates</h1>
     <ul class="subnav-hero-subnav">
-      <li><a href="index.html" class="is-active">Home</a></li>
-      <li><a href="questions.html" class="is-active">Find your match!</a></li>
-      <li><a href="pets.html" class="is-active">See all Pets</a></li>
-      <li><a href="newpet.html" class="is-active">Add a Pet</a></li>
+      <li><a href="/" class="is-active">Home</a></li>
+      <li><a href="/questions.html" class="is-active">Find your match!</a></li>
+      <li><a href="/pets.html" class="is-active">See possible pets</a></li>
       <li><a href="finder.html" class="is-active">Find a Pet near you!</a></li>
+
+
     </ul>
   </header>
   <br />
-
   <div class="grid-container">
-    <h2 style="text-align:center">Find your Ani-Mate!</h2>
-    <h3 style="text-align:center">Find the best pet for your lifestyle and view information on different types of pets.</h3>
+    <div class="translucent-quiz-overlay">
+      <form>
+        <div class="grid-container">
+          <h2>Find Your Ani-Mate!</h2>
+          <br>
+            <h3>Find the best pet for your lifestyle + view information on pets available for adoption in your area!</h3>
+            <br>    
+                <div class="in-grid">
+                What type of pet is your 'pawfect' mate?
+            <br><br>
+                <a href="questions.html" type="submit" class="primary button">Ani-Match Us!</button></a>
+                </div>
+            <br>
+                <div class="in-grid">
+                Browse through all the Ani-Mates
+            <br><br>
+            <a href="pets.html" type="submit" class="primary button">Lookey Here!</button></a>
+                    </div>
 
-    <div class="marketing-site-content-section">
-      <div class="marketing-site-content-section-block">
-        <h3 class="marketing-site-content-section-block-header">Which Pet is best for me?</h3>
-        <a href="questions.html" class="round button small">Find my Pet</a>
-      </div>
-      <div class="marketing-site-content-section-block">
-        <h3 class="marketing-site-content-section-block-header">View all pet information</h3>
-        <a href="pets.html" class="round button small">View Pets</a>
-      </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
   <br />
-  
+
+  <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+
+    <div class="modalDiv"></div>
+    <a href="questions.html" class="close-reveal-modal" aria-label="Close"><h1>&#215;</h1></a>
+
+  </div>
 
 </body>
 

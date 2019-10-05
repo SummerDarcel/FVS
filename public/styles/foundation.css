@@ -5,6 +5,17 @@ body{
 p, label{
   font-size:20px;
 }
+
+.in-grid {
+  text-align: center;
+  font-family: 'Mansalva', cursive;
+  font-size: 25px;
+}
+
+.button {
+  font-family: 'Roboto Slab', serif;
+}
+
 .subnav-hero-section {
     text-align: center;
     font-family: 'Roboto Slab', serif;
