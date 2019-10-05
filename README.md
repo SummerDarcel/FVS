@@ -9,18 +9,10 @@ Pet Finder is a lighthearted app which allows you to get matched up with your pe
 The user will answer questions, then behind the scenes, the user gets matched with pets in a database.  Let's face it, although people want pets, some shouldn't!  That gets captured as well.  The database can be updated with new pets, and you can even search for adoptable pets in your area using your zipcode!
 
 ## Code: 
-This app uses HTML, CSS, jQuery, Databases, Node, Express, curl, and is deployed to Heroku.  We use Travis CI with Linter and follow MVC filing.
+This app uses HTML, CSS, jQuery, Databases, Node, Express, curl, and is deployed to Heroku.  We use Travis CI with Linter and follow MVC filing.  
 
-``
 ## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
+https://projectfvs.herokuapp.com/
 
 
 

@@ -192,7 +192,7 @@ p, label{
 
   
 .translucent-form-overlay {
-  max-width: 700px;
+  width: 100%;
   width: 100%;
   background-color: rgba(54, 54, 54, 0.8);
   padding: 20px;
