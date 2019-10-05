@@ -1,18 +1,10 @@
-.grid-container {
-    font-family: 'Mansalva', cursive;
-}
+/* .grid-container {
+    background-color: #fad2d9;
+} */
 
 #quizImg {
     background-color: #fad2d9;
 }
-
-#allPets {
-    background-color: #fad2d9;
-}
-
-table {
-    font-family: 'Mansalva', cursive;
-    font-size: x-large;
 
 .list-group-item {
  line-height: 2.5;
@@ -25,11 +17,6 @@ h2{
 
 h3{
     text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: large;
-}
-
-#Pets {
     font-family: 'Roboto Slab', serif;
     font-size: large;
 }
